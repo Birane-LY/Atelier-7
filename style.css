@@ -86,7 +86,7 @@ body {
   width: 100%;
 }
 
-/* Lien actif (ex: Accueil) */
+/* Lien actif ( Accueil) */
 .nav-links li.deco a {
   color: var(--text-main);
 }
