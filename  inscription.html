@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscription</title>
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="inscription.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+           <div class="logo-div">
+              <div class="logo">
+                <img src="Images/logo.png" alt="Logo">
+              </div>
+           </div>
+             <!-- Liens de navigation -->
+            <ul class="nav-links">
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="#menu">Restaurants</a></li>
+                <li><a href="#cours">Cours de Cuisine</a></li>
+                <li class="fixed"><a href="traiteurs.html">Traiteurs</a></li>
+                <li><a href="#">Contact</a></li>
+                
+           
+            </ul>
+             <!-- Boutons d'action -->
+                <div class="btn-header">
+                    <div class="nav-buttons">
+                        <button class="btn-outline">Connexion</button>
+                        <button class="btn-primary">Inscription</button>
+                    </div>
+                </div>  
+            </nav>
+    </header> 
+    <div class="header1">
+        <div class="traiteur">
+            <h1>Devenir traiteur</h1>
+            <p>Rejoignez notre plateforme et développez votre activité de traiteur</p>
+        </div>
+    </div>
+<section>
+  <form class="form-container">
+
+    <!-- ================= INFORMATIONS DE BASE ================= -->
+    <h3>Informations de base</h3>
+
+    <div class="row">
+      <div class="field">
+        <label>Nom complet</label>
+        <input type="text">
+      </div>
+
+      <div class="field">
+        <label>Email</label>
+        <input type="email" value="Bintadmi@gmail.com">
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="field">
+        <label>Mot de passe</label>
+        <input type="password" value="******">
+      </div>
+
+      <div class="field">
+        <label>Confirmer le mot de passe</label>
+        <input type="password">
+      </div>
+    </div>
+
+    <!-- ================= INFORMATIONS PROFESSIONNELLES ================= -->
+    <h3>Informations professionnelles</h3>
+
+    <div class="field">
+      <label>Catégorie</label>
+      <select>
+        <option value="1">Sélectionnez une catégorie</option>
+        <option value="2">Chef</option>
+        <option value="3">Commis</option>
+        <option value="4">Pâtissier</option>
+      </select>
+    </div>
+
+    <div class="field">
+      <label>Années d'expérience</label>
+      <input type="number">
+    </div>
+
+    <div class="field">
+      <label>Description</label>
+      <textarea rows="4"></textarea>
+    </div>
+
+    <!-- ================= SERVICES ================= -->
+    <div class="field">
+      <label>Services proposés</label>
+
+      <div class="checkbox-group">
+        <label><input type="checkbox"> Mariage</label>
+        <label><input type="checkbox"> Anniversaire</label>
+        <label><input type="checkbox"> Événements d'entreprise</label>
+        <label><input type="checkbox"> Cocktails</label>
+        <label><input type="checkbox"> Buffets</label>
+        <label><input type="checkbox"> Dîners privés</label>
+        <label><input type="checkbox"> Cuisine sur mesure</label>
+      </div>
+    </div>
+
+    <!-- ================= CONTACT ================= -->
+    <h3>Informations de contact</h3>
+
+    <div class="row">
+      <div class="field">
+        <label>Téléphone</label>
+        <input type="tel">
+      </div>
+
+      <div class="field">
+        <label>Adresse</label>
+        <input type="text">
+      </div>
+    </div>
+
+    <!-- ================= PHOTO ================= -->
+    <h3>Photo de profil</h3>
+
+    <div class="field">
+      <label>Photo</label>
+      <input type="file">
+      <small>Formats acceptés : JPG, JPEG, PNG. Taille maximale : 10MB</small>
+    </div>
+
+    <!-- ================= BOUTON ================= -->
+    <div class="submit-wrapper">
+      <button type="submit">S'inscrire</button>
+    </div>
+
+  </form>
+</section>
+
+
+<!-- ================= FOOTER ================= -->
+   <footer> 
+     <div class="container">
+        <div class="column">
+            <h4>À propos</h4>
+            <ul>
+                <li><a href="#">Qui sommes-nous</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Mentions légales</a></li>
+                <li><a href="#">Politique de confidentialité</a></li>
+            </ul>
+        </div>
+        <div class="column">
+            <h4>Services</h4>
+            <ul>
+                <li><a href="#">Traiteurs</a></li>
+                <li><a href="#">Restaurants</a></li>
+                <li><a href="#">Cours de cuisine</a></li>
+            </ul>    
+        </div>
+        <div class="column">
+            <h4>Espace Pro</h4>
+            <ul>
+                <li><a href="#">Devenir partenaire</a></li>
+                <li><a href="#">Connexion</a></li>
+                <li><a href="#">FAQ Professionnels</a></li>
+            </ul>
+        </div>
+        <div class="column">
+            <h4>Contact</h4>
+            <p>Star Buffet Dakar, Sénégal</p>
+            <p>Tél: +221 77 000 00 00</p>
+            <p>Email: contact@startbuff.com</p>
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-instagram"></i>
+        </div>
+    </div>
+      <div class="copyright">
+        <p>&copy; 2025 Star Buffet. Tous droits réservés.</p>
+      </div>
+    
+    </footer> 
+</body>
+</html>

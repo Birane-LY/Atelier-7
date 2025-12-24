@@ -1,0 +1,291 @@
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+ 
+}
+
+/* ---------------- VARIABLES (PALETTE) ---------------- */
+:root {
+  --bg-main: #FFF3E0;      
+  --bg-section: #FFF3E0;   
+  --text-main: #E65100;    
+  --text-title: #000000;  
+  --span: #FFB300;
+  --orange: #c34020;      
+  --gris: #8c8987;
+  --vert: #2b8e09;       
+}
+
+body {
+  background: #fff8e6;
+  padding: 0;
+  width: 100%;
+  overflow-x: hidden;
+}
+main {
+    padding: 50px 0px;
+}
+
+section {
+   padding: 90px 0px;
+}
+/* ---------------- NAVBAR ---------------- */
+
+.logo img {
+    
+    width:100px;
+    display: block;
+}
+
+
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 100px;
+  background: white;
+  position: sticky;
+}
+
+.nav-links {
+  display: flex;
+  gap: 45px;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  list-style: none;
+  height: 100%;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #000000b3;
+  font-weight: 500;
+  transition: color 0.5s;
+  margin: 0;
+}
+
+
+.nav-links a:hover {
+  color: var(--text-main);
+   background-color: #FFF8EE;
+  color: var(--text-main);
+   border-bottom: 1px solid var(--text-main);
+   transition: color 0.5s;
+}
+/* ---------------- BOUTONS ---------------- */
+.btn-primary {
+  background:#E65100;
+  color: white;
+  padding: 10px 25px;
+  border-radius: 8px;
+  border: none;
+}
+
+.btn-outline {
+  background: transparent;
+  border: 1px solid white;
+  padding: 10px 25px;
+  border-radius: 8px;
+}
+.btn-primary, .fixed {
+  background:#E65100;
+  color: white;
+  padding: 10px ;
+  border-radius: 8px;
+  border: none;
+}
+
+/* Traiteurs.html */
+.header1 .traiteur {
+  background-image: linear-gradient(
+        to bottom, 
+        rgba(0, 0, 0, 0.7), /* Noir semi-transparent en haut */
+        rgba(0, 0, 0, 0.3), /* Noir moins transparent au milieu */
+        transparent         /* Complètement transparent en bas */
+    ),  url(Images/banner-caterers.jpg);
+  min-height: 35vh;
+  background-size: cover; 
+  background-position: center; 
+  padding: 90px 0px; 
+  text-align: center; 
+  color: white; 
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.traiteur h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 45px;
+  font-style: italic;
+  color: #FAF3E0;
+  text-align: center;
+  margin: 20px 0;
+}
+
+.traiteur p {
+  max-width: 520px;
+  font-size: 15px;
+  color: #FAF3E0;
+  line-height: 1.6;
+ 
+  top: 100px;
+  left: 200px;
+ 
+}
+
+
+
+
+
+/* ========== FORMULAIRE ========== */
+.form-container {
+  background: #fff;
+  max-width: 700px;
+  margin: auto;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
+
+/* ========== TITRES ========== */
+.form-container h3 {
+  font-size: 15px;
+  margin: 25px 0 15px;
+  font-weight: bold;
+  color: #333;
+}
+
+/* ========== LIGNES ========== */
+.row {
+  display: flex;
+  gap: 20px;
+}
+
+.row .field {
+  flex: 1;
+}
+
+/* ========== CHAMPS ========== */
+.field {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+}
+
+.field label {
+  font-size: 13px;
+  margin-bottom: 6px;
+  color: #333;
+}
+
+.field input,
+.field select,
+.field textarea {
+  padding: 9px 10px;
+  border-radius: 5px;
+  border: 1px solid #e2e2e2;
+  font-size: 14px;
+}
+
+.field textarea {
+  resize: none;
+}
+
+/* ========== CHECKBOX ========== */
+.checkbox-group {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px 20px;
+  margin-top: 8px;
+}
+
+.checkbox-group label {
+  font-size: 13px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+/* ========== FILE ========== */
+.field small {
+  font-size: 11px;
+  color: #777;
+  margin-top: 6px;
+}
+
+/* ========== BOUTON ========== */
+.submit-wrapper {
+  text-align: right;
+  margin-top: 25px;
+}
+
+.submit-wrapper button {
+  background: #e67e22;
+  color: #fff;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+footer {
+  background-color: #1a202c;
+  color: #a0aec0; 
+  padding: 40px 0; 
+  font-family: sans-serif;
+  font-size: 14px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between; 
+    max-width: 1200px;
+    margin: 0 auto; /* Centre le conteneur */
+    flex-wrap: wrap; /* Permet le retour à la ligne sur mobile */
+}
+
+.column {
+    flex: 1; /* Les colonnes prennent un espace égal */
+    min-width: 200px; 
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+h4 {
+    color: #ffffff; 
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
+
+ul {
+    list-style: none; 
+    padding: 0;
+}
+
+li a {
+    color: #a0aec0;
+    text-decoration: none;
+    display: block;
+    margin-bottom: 10px;
+    transition: color 0.3s;
+}
+
+li a:hover {
+    color: #ffffff;
+}
+
+.copyright {
+    text-align: center;
+    margin-top: 20px;
+    border-top: 1px solid #4a5568; 
+    padding-top: 20px;
+    font-size: 0.8rem;
+    align-items: end;
+}

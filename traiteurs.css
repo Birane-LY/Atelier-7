@@ -1,0 +1,438 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+ 
+}
+/* ---------------- VARIABLES (PALETTE) ---------------- */
+:root {
+  --bg-main: #FFF3E0;      
+  --bg-section: #FFF3E0;   
+  --text-main: #E65100;    
+  --text-title: #000000;  
+  --span: #FFB300;
+  --orange: #c34020;      
+  --gris: #8c8987;
+  --vert: #2b8e09;       
+}
+
+body {
+  background: #fff8e6;
+  padding: 0;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+main {
+    padding: 0 ;
+}
+
+section {
+   padding: 0;
+   background: var(--bg-section);
+}
+
+article {
+  padding: 0;
+}
+/* ---------------- NAVBAR ---------------- */
+
+.logo img {
+    
+    width:100px;
+    display: block;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 100px;
+  background: white;
+  position: sticky;
+}
+
+.nav-links {
+  display: flex;
+  gap: 45px;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  list-style: none;
+  height: 100%;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #000000b3;
+  font-weight: 500;
+  transition: color 0.5s;
+  margin: 0;
+}
+
+
+.nav-links a:hover {
+  color: var(--text-main);
+   background-color: #FFF8EE;
+  color: var(--text-main);
+   border-bottom: 1px solid var(--text-main);
+   transition: color 0.5s;
+}
+/* ---------------- BOUTONS ---------------- */
+
+.btn-header {
+  padding: 0;
+  
+  height: 100%;
+  display:flex ;
+  justify-content: center;
+  align-items: center;
+}
+.btn-primary, .fixed {
+  background:#E65100;
+  color: white;
+  padding: 10px ;
+  border-radius: 8px;
+  border: none;
+}
+
+.btn-outline {
+  background: transparent;
+  border: 1px solid white;
+  padding: 0px 25px;
+  border-radius: 8px;
+  color: black;
+}
+/* Traiteurs.html */
+.header1 .traiteur {
+  background-image:  url(Images/banner-caterers.jpg);
+  min-height: 35vh;
+  background-size: cover; 
+  background-position: center; 
+  padding: 90px 0px; 
+  text-align: center; 
+  color: white; 
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.header1 .traiteur::before {
+background-color: rgba(93, 64, 55, 0.7);
+}  
+.traiteur h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 55px;
+  font-style: italic;
+  color: #FAF3E0;
+  text-align:left;
+}
+
+.traiteur p {
+  max-width: 520px;
+  font-size: 18px;
+  color: #FAF3E0;
+  line-height: 1.6;
+  text-align: left;
+ 
+}
+.btn-secondary {
+  background:white;
+  color: #E65100;
+  padding: 10px 25px;
+  border-radius: 8px;
+  border: none;
+}
+
+.btn-secondary a {
+  text-decoration: none;
+  color: #E65100;
+  font-size: 16px;
+}
+/**/
+
+
+/* ============== FILTRES ============== */
+.filters {
+  background: var(--bg-section);
+  padding:20px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+ 
+}
+.filters-row {
+  display: flex;
+  align-items: center;       /* alignement vertical parfait */
+  justify-content: center;
+}
+
+
+.filters h2 {
+  margin-bottom: 15px;
+}
+
+.filters-controls {
+  display: flex;
+  align-items: flex-end;     /* boutons alignés avec les selects */
+  gap: 25px;
+  justify-content: space-between;
+  margin: 10px;
+  padding: 0;
+}
+
+
+.field {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+}
+
+.field label {
+  font-size: 13px;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.field select {
+  min-width: 180px;
+  padding: 8px 10px;
+  border-radius: 6px;
+  border: 1px solid #ddd;
+  background: #fff;
+}
+
+
+.btn {
+  padding: 9px 14px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+  height: 38px; /* IMPORTANT pour l’alignement */
+}
+
+.btn.filter {
+  background: #e67e22;
+  color: #fff;
+}
+
+.btn.reset {
+  background: #fff;
+  border: 1px solid #ddd;
+}
+
+
+/* ============== LISTE ============== */
+.list {
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  background: var(--bg-section);
+  align-items: center;
+  min-height: 100px;
+  
+}
+
+/* ============== CARTE ============== */
+.card {
+  display: flex;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+  overflow: hidden;
+  width: 90%;
+  height: 180px;
+}
+
+.card img {
+  width: 360px;
+  object-fit: cover;
+  background: none;
+}
+
+.card-content {
+  padding: 20px;
+  flex: 1;
+}
+
+.badge {
+  background: #d4f8d4;
+  color: #1e7f1e;
+  font-size: 12px;
+  padding: 4px 8px;
+  border-radius: 20px;
+  display: inline-block;
+  margin-bottom: 10px;
+}
+
+.experience {
+  font-size: 13px;
+  color: #666;
+  margin-bottom: 5px;
+}
+
+.card-content h3 {
+  margin-bottom: 10px;
+}
+
+.label {
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.tags {
+  display: flex;
+  gap: 8px;
+  margin: 8px 0;
+}
+
+.tags span {
+  background: #f2f2f2;
+  padding: 5px 10px;
+  border-radius: 15px;
+  font-size: 12px;
+}
+
+.phone {
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+/* ============== DROITE ============== */
+.card-right {
+  padding: 20px;
+  text-align: right;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.rating {
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.btn.profile {
+  background: #0b1b33;
+  color: #fff;
+}
+
+.GO {
+  min-height: 20vh;
+  background-image:url(Images/banner-head-accueil.jpg);
+  background-size: cover; 
+  background-position: center; 
+  padding: 100px 50px; 
+  text-align: center; 
+  color: white; 
+  position: relative;
+  gap: 60px;
+  z-index: 11;
+  margin-bottom: 40px;
+}
+
+
+
+.GO ::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgb(219 75 8 / 26%);
+    opacity:0.6;
+}
+
+.GO1 h2{
+  text-align: center;
+  color: white;
+  font-size: 28px ;
+  font-weight: bold;
+}
+
+.GO1 p {
+  text-align: center;
+  color: white;
+  font-size: 16px;
+}
+
+.GO1 .button  {
+  background-color: white;
+  color: var(--text-main);
+  border-radius: 12px;
+  display: inline-block;
+  padding: 12px 30px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+ 
+}
+.GO1 button .btn-secondary a {
+  cursor: pointer;
+   transition: background-color 0.3s;
+}
+footer {
+  background-color: #1a202c;
+  color: #a0aec0; 
+  padding: 40px 20px; 
+  font-family: sans-serif;
+  font-size: 14px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between; 
+    max-width: 1200px;
+    margin: 0 auto; /* Centre le conteneur */
+    flex-wrap: wrap; /* Permet le retour à la ligne sur mobile */
+}
+
+.column {
+    flex: 1; /* Les colonnes prennent un espace égal */
+    min-width: 200px; 
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+h4 {
+    color: #ffffff; 
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
+
+ul {
+    list-style: none; 
+    padding: 0;
+}
+
+li a {
+    color: #a0aec0;
+    text-decoration: none;
+    display: block;
+    margin-bottom: 10px;
+    transition: color 0.3s;
+}
+
+li a:hover {
+    color: #ffffff;
+}
+
+.copyright {
+    text-align: center;
+    margin-top: 20px;
+    border-top: 1px solid #4a5568; 
+    padding-top: 20px;
+    font-size: 0.8rem;
+}
+
+.card-content .badge{
+  left: 32em;
+  position: absolute;
+  padding: 5px;
+}
