@@ -35,13 +35,13 @@ body {
   align-items: center;
   padding: 20px 100px;
   background: white;
-  position: sticky;
+  position: relative;
 }
 
 .nav-links {
   display: flex;
   gap: 45px;
-  font-size: 14px;
+  font-size: 17px;
   list-style: none;
 }
 
@@ -49,22 +49,20 @@ body {
   text-decoration: none;
   color: #000000b3;
   font-weight: 500;
- transition: color 0.3s ease, transform 0.3s ease;
+  transition: color 0.3s ease, transform 0.3s ease;
 }
 
 
 .nav-links a:hover {
-  color: var(--text-main);
+    color: var(--text-main);
    background-color: #FFF8EE;
-  color: var(--text-main);
    border-bottom: 1px solid var(--text-main);
    transition:all color 0.5s;
    transform: translateY(-2px);
 }
 .deco  a:hover {
-  color: var(--text-main);
+    color: var(--text-main);
     font-weight: bold;
-  border-bottom: 2px solid var(--text-main);
 }
 
 
@@ -102,6 +100,7 @@ body {
   padding: 10px 25px;
   border-radius: 8px;
   border: none;
+  cursor: pointer;
 }
 
 .btn-outline {

@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="Dashboard.css" >
+</head>
+<body>
+   <nav class="sidebar">
+  <!-- TOP -->
+  <div class="sidebar-top">
+    <div class="image-text">
+      <span class="image">
+        <img src="Images/logo.png" alt="Logo">
+      </span>
+    </div>
+
+    <ul class="menu-links">
+      <li class="nav-link">
+        <a href="#">
+          <i class="fa-solid fa-house icon"></i>
+          <span class="text">Tableau de bord</span>
+        </a>
+      </li>
+
+      <li class="nav-link">
+        <a href="#">
+          <i class="fa-solid fa-book-open icon"></i>
+          <span class="text">Cours de Cuisine</span>
+        </a>
+      </li>
+
+      <li class="nav-link">
+        <a href="#">
+          <i class="fa-solid fa-tag icon"></i>
+          <span class="text">Catégories</span>
+        </a>
+      </li>
+
+      <li class="nav-link active">
+        <a href="#">
+          <i class="fa-solid fa-building icon"></i>
+          <span class="text">Restaurants</span>
+        </a>
+      </li>
+
+      <li class="nav-link">
+        <a href="#">
+          <i class="fa-solid fa-building icon"></i>
+          <span class="text">Traiteurs</span>
+        </a>
+      </li>
+
+      <li class="nav-link">
+        <a href="#">
+          <i class="fa-regular fa-star icon"></i>
+          <span class="text">Avis</span>
+        </a>
+      </li>
+    </ul>
+  </div>
+
+  <!-- DASHBOARD FOOTER -->
+  <div class="sidebar-footer">
+    <a href="#" class="btn-outline">
+      <i class="fa-solid fa-arrow-right-from-bracket icon"></i> Retour à l'accueil
+    </a>
+    <div class="btn-line">
+    <a href="#" class="btn-outline">
+      <i class="fa-solid fa-arrow-right-from-bracket icon"></i> Déconnexion
+    </a>
+    </div>
+  </div>
+</nav>
+
+<!-- MAIN -->
+<main class="main">
+
+    <div class="header">
+        <div>
+            <h1>Restaurants</h1>
+            <p>Gérez les restaurants de la plateforme.</p>
+        </div>
+        <button class="btn-primary">Ajouter un restaurant</button>
+    </div>
+
+    <!-- FILTER -->
+    <div class="filter-box">
+        <select>
+            <option>Toutes les zones</option>
+            <option>Plateau</option>
+            <option>Médina</option>
+            <option>Almadies</option>
+            <option>Yoff</option>
+            <option>Sacré-coeur</option>
+        </select>
+        <button class="btn-filter">Filtrer</button>
+    </div>
+
+    <!-- TABLE -->
+    <div class="table-container">
+        <table>
+            <thead>
+                <tr>
+                    <th>Nom</th>
+                    <th>Email</th>
+                    <th>Zone</th>
+                    <th>Statut</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="restaurant">
+                        <div class="avatar">Logo</div>
+                        Le Djoloff
+                    </td>
+                    <td>contact@ledjoloff.sn</td>
+                    <td>Plateau</td>
+                    <td><span class="badge badge-warning">En attente</span></td>
+                    <td class="actions">
+                        <a class="edit">Modifier</a>
+                        <a class="delete">Supprimer</a>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="restaurant">
+                        <div class="avatar">Logo</div>
+                        Chez Loutcha
+                    </td>
+                    <td>contact@lchezloutcha.sn</td>
+                    <td>Plateau</td>
+                    <td><span class="badge badge-warning">En attente</span></td>
+                    <td class="actions">
+                        <a class="edit">Modifier</a>
+                        <a class="delete">Supprimer</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="restaurant">
+                        <div class="avatar">Logo</div>
+                        Le Sushi Dakar
+                    </td>
+                    <td>contact@lesushidakar.sn</td>
+                    <td>Médina</td>
+                    <td><span class="badge badge-success">Vérifié</span></td>
+                    <td class="actions">
+                        <a class="edit">Modifier</a>
+                        <a class="delete">Supprimer</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="restaurant">
+                        <div class="avatar">Logo</div>
+                        La Playa
+                    </td>
+                    <td>contact@laplaya.sn</td>
+                    <td>Corniche</td>
+                    <td><span class="badge badge-success">Vérifié</span></td>
+                    <td class="actions">
+                        <a class="edit">Modifier</a>
+                        <a class="delete">Supprimer</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="restaurant">
+                        <div class="avatar">Logo</div>
+                        Ô bon food!
+                    </td>
+                    <td>contact@ôbonfood.sn</td>
+                    <td>Médina</td>
+                    <td><span class="badge badge-warning">En attente</span></td>
+                    <td class="actions">
+                        <a class="edit">Modifier</a>
+                        <a class="delete">Supprimer</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="restaurant">
+                        <div class="avatar">Logo</div>
+                        Festival des Pains
+                    </td>
+                    <td>contact@festivaldespains.sn</td>
+                    <td>Yoff</td>
+                    <td><span class="badge badge-warning">En attente</span></td>
+                    <td class="actions">
+                        <a class="edit">Modifier</a>
+                        <a class="delete">Supprimer</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="restaurant">
+                        <div class="avatar">Logo</div>
+                        Le Thiof
+                    </td>
+                    <td>contact@lethiof.sn</td>
+                    <td>Sacré-coeur</td>
+                    <td><span class="badge badge-warning">En attente</span></td>
+                    <td class="actions">
+                        <a class="edit">Modifier</a>
+                        <a class="delete">Supprimer</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="restaurant">
+                        <div class="avatar">Logo</div>
+                        Baobab Gourmet
+                    </td>
+                    <td>contact@baobabgourmet.sn</td>
+                    <td>Almadies</td>
+                    <td><span class="badge badge-warning">En attente</span></td>
+                    <td class="actions">
+                        <a class="edit">Modifier</a>
+                        <a class="delete">Supprimer</a>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+</main>
+
+</body>

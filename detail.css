@@ -1,0 +1,302 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+ 
+}
+/* ---------------- VARIABLES (PALETTE) ---------------- */
+:root {
+  --bg-main: #FFF3E0;      
+  --bg-section: #FFF3E0;   
+  --text-main: #E65100;    
+  --text-title: #000000;  
+  --span: #FFB300;
+  --orange: #c34020;      
+  --gris: #8c8987;
+  --vert: #2b8e09;       
+}
+
+body {
+  background: #fff8e6;
+  padding: 0;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+main {
+    padding: 0 ;
+}
+
+section {
+   padding: 0;
+   background: var(--bg-section);
+}
+
+aside {
+  padding: 0;
+}
+/* ---------------- NAVBAR ---------------- */
+
+.logo img {
+    
+    width:100px;
+    display: block;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 100px;
+  background: white;
+  position: relative;
+}
+
+.nav-links {
+  display: flex;
+  gap: 45px;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  list-style: none;
+  height: 100%;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #000000b3;
+  font-weight: 500;
+  transition: color 0.5s;
+  margin: 0;
+}
+
+
+.nav-links a:hover {
+  color: var(--text-main);
+   background-color: #FFF8EE;
+  color: var(--text-main);
+   border-bottom: 1px solid var(--text-main);
+   transition:all color 0.5s;
+   transform: translateY(-2px);
+}
+
+
+/* Trait animé */
+.nav-links li a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  width: 0;
+  height: 2px;
+  background-color: var(--text-main); 
+  transition: width 0.3s ease;
+}
+
+/* Hover */
+
+.nav-links li a:hover::after {
+  width: 100%;
+}
+
+/* ---------------- BOUTONS ---------------- */
+
+.btn-header {
+  padding: 0;
+  
+  height: 100%;
+  display:flex ;
+  justify-content: center;
+  align-items: center;
+}
+.btn-primary, .fixed {
+  background:#E65100;
+  color: white;
+  padding: 10px ;
+  border-radius: 8px;
+  border: none;
+}
+
+.btn-outline {
+  background: transparent;
+  border: 1px solid white;
+  padding: 0px 25px;
+  border-radius: 8px;
+  color: black;
+}
+/* HERO */
+.hero {
+  position: relative;
+}
+
+.hero  {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  background: url(Images/salade.jpeg) no-repeat center/cover;
+}
+
+.rating {
+  position: absolute;
+  bottom: 15px;
+  left: 30px;
+  color: white;
+}
+
+.Star{
+  background: #0adb0a;
+  color: #075807;
+  font-size: 15px;
+  border-radius: 25px;
+  width: 10%;
+  display: inline-block;
+}
+/* MAIN */
+.container {
+  display: flex;
+  padding: 40px;
+  gap: 30px;
+}
+
+.left {
+  flex: 3;
+}
+
+.right {
+  flex: 1;
+}
+
+.card {
+  background: white;
+  padding: 25px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.card h3 {
+  margin-bottom: 15px;
+}
+
+.card p {
+  margin-bottom: 12px;
+  line-height: 1.6;
+}
+
+.right .card1 {
+  padding: 25px;
+  background: white;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.right .card1 h3 {
+  margin-bottom: 15px;
+}
+
+.right .card1 p {
+  margin-bottom: 12px;
+  line-height: 1.6;
+}
+
+/* Dernier paragraphe sans marge en bas */
+.right .card1 p:last-child {
+  margin-bottom: 0;
+}
+
+/* TAGS */
+.tags span {
+  background: #f1f1f1;
+  padding: 5px 10px;
+  border-radius: 20px;
+  margin-right: 8px;
+  font-size: 14px;
+}
+
+/* SERVICES */
+.services {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px 30px;
+}
+
+.services li {
+  font-size: 17px;
+}
+
+.vt {
+  color: #1e7f1e;
+}
+
+/* BUTTON */
+
+.ctn {
+  background: white;
+  padding: 25px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+.contact-btn {
+  width: 100%;
+  background: #4338CA;
+  color: white;
+  border: none;
+  padding: 15px;
+  border-radius: 10px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+footer {
+  background-color: #1a202c;
+  color: #a0aec0; 
+  padding: 40px 20px; 
+  font-family: sans-serif;
+  font-size: 14px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between; 
+    max-width: 1200px;
+    margin: 0 auto; /* Centre le conteneur */
+    flex-wrap: wrap; /* Permet le retour à la ligne sur mobile */
+}
+
+.column {
+    flex: 1; /* Les colonnes prennent un espace égal */
+    min-width: 200px; 
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+h4 {
+    color: #ffffff; 
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
+
+ul {
+    list-style: none; 
+    padding: 0;
+}
+
+li a {
+    color: #a0aec0;
+    text-decoration: none;
+    display: block;
+    margin-bottom: 10px;
+    transition: color 0.3s;
+}
+
+li a:hover {
+    color: #ffffff;
+}
+
+.copyright {
+    text-align: center;
+    margin-top: 20px;
+    border-top: 1px solid #4a5568; 
+    padding-top: 20px;
+    font-size: 0.8rem;
+}
