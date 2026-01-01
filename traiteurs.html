@@ -34,6 +34,7 @@
                     </div>
                 </div>  
             </nav>
+             <i class="fa-solid fa-bars burger-icon"></i>
     </header> 
     <div class="header1">
         <div class="traiteur">
@@ -61,16 +62,17 @@
 
       <div class="field">
         <label>Statut</label>
-                <select >
+                <select  id="statut">
                     <option value="1">Tous les traiteurs</option>
                     <option value="2">Chef Moe</option>
                     <option value="3">Chef Diop</option>
                     <option value="4">Cheffe Ndiaye</option>
                 </select>
       </div>
-
-      <button class="btn filter"><i class="fa-solid fa-filter"></i> Filtrer</button>
-      <button class="btn reset"><i class="fa-solid fa-arrows-rotate"></i> Réinitialiser</button>
+      <div class="btns">
+        <button class="filter"><i class="fa-solid fa-filter"></i> Filtrer</button>
+        <button class="reset"><i class="fa-solid fa-arrows-rotate"></i> Réinitialiser</button>
+      </div>
     </div>
   </section>
 
@@ -98,7 +100,7 @@
 
       <div class="card-right">
         <div class="rating">⭐ 0.0</div>
-        <button class="btn profile">Voir le profil</button>
+        <button class="btn-profile"><a href="http://127.0.0.1:5501/detail.html">Voir le profil</a></button>
       </div>
     </article>
 
@@ -122,7 +124,7 @@
 
       <div class="card-right">
         <div class="rating">⭐ 0.0</div>
-        <button class="btn profile">Voir le profil</button>
+        <button class="btn-profile">Voir le profil</button>
       </div>
     </article>
 

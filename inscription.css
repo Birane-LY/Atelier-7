@@ -73,8 +73,29 @@ section {
    background-color: #FFF8EE;
   color: var(--text-main);
    border-bottom: 1px solid var(--text-main);
-   transition: color 0.5s;
+   transition:all color 0.5s;
+   transform: translateY(-2px);
 }
+
+
+/* Trait animé */
+.nav-links li a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  width: 0;
+  height: 2px;
+  background-color: var(--text-main); 
+  transition: width 0.3s ease;
+}
+
+/* Hover */
+
+.nav-links li a:hover::after {
+  width: 100%;
+}
+
 /* ---------------- BOUTONS ---------------- */
 .btn-primary {
   background:#E65100;
